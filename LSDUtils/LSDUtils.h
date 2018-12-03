@@ -9,69 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-// 仅在debug模式输出日志
-#ifndef __OPTIMIZE__
-#define NSLog(...) NSLog(__VA_ARGS__)
-#else
-#define NSLog(...){}
-#endif
-
-// 颜色工具
-// 颜色(RGB)
-// rgb颜色转换（16进制->10进制）
-#define HexColor(rgbValue)      [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-#define RGBA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
-
-/** 项目主色  */
-#define MainColor HexColor(0x130D14)
-/** 分割线的色儿  */
-#define kLineColor RGBA(255.0, 255.0, 255.0, 0.2)
-#define kBgColor RGBA(0, 0, 0, 0.6)
-#define kBlackColorAlph(VALUE) RGBA(0, 0, 0, VALUE)
-#define kWhiteColorAlph(VALUE) RGBA(255.0, 255.0, 255.0, VALUE)
-
-// 常用文字的颜色
-/** 白色  */
-#define MainColor0 HexColor(0xFFFFFF)
-/** 红色  */
-#define MainColor1 HexColor(0xFF328B)
-
-// 手机别名： 用户定义的名称
-#define DeviceName [[UIDevice currentDevice] name]
-// 获取当前build号
-#define CFBundleBuild  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
-// 获取当前app的版本Version （例如：1.0.0）
-#define CFBundleVersion   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-// 获取当前设备的版本 （iOS号码）
-#define KSystemVersion   [[[UIDevice currentDevice] systemVersion] floatValue]
-/** 存版本号  */
-#define kOldVerson @"oldVerson"
-
-// 手机型号判断
-//4s, 5，5s手机
-#define IPhone5                (([UIScreen mainScreen].bounds.size.width <= 320.0 && [UIScreen mainScreen].bounds.size.height <= 568.0) ? (YES) : (NO) )
-#define Iphone6 (([UIScreen mainScreen].bounds.size.width==375&&[UIScreen mainScreen].bounds.size.height==667))
-#define Iphone6P (([UIScreen mainScreen].bounds.size.width==414&&[UIScreen mainScreen].bounds.size.height==736))
-#define IphoneX  (([UIScreen mainScreen].bounds.size.width==375&&[UIScreen mainScreen].bounds.size.height==812))
-
-//  尺寸相关
-#define SCREEN_Frame  [[UIScreen mainScreen] bounds]
-#define SCREEN_W  [[UIScreen mainScreen] bounds].size.width
-#define SCREEN_H [[UIScreen mainScreen] bounds].size.height
-#define kNavHeight (IphoneX==YES ? 88 : 64) // 状态栏+导航栏
-#define kTabBarH (IphoneX==YES ? 83 : 49) // 底部tabBar高度
-
-#define Rate UIScreen.mainScreen.bounds.size.width/375   //屏宽比例
-#define KLineH 0.5 // 分割线的高
-
-// weakSelf
-#define WEAKSELF typeof(self) __weak weakSelf = self;
-#define STRONGSELF __strong __typeof(self) strongSelf = weakSelf;
-
-//判断字符串是否为空
-#define ISEMPTY(_v) (_v == nil || _v.length == 0 || [_v isKindOfClass:[NSNull class]])
-
 @interface LSDUtils : NSObject
 
 /** 生成唯一码/获取uuid（uuid的特性：每次运行都会发生变化）  */

@@ -43,7 +43,10 @@
 }
 
 - (void)setUpChildVc {
-    
+    MainPartitionViewController *HomeVC = [[MainPartitionViewController alloc] init];
+    [self setUpOneChildVcWithVc:HomeVC Image:@"tab_btn_home" selectedImage:@"tab_btn_home_pre" title:@"首页"];
+    MePartitionViewController *userVC = [[MePartitionViewController alloc] init];
+    [self setUpOneChildVcWithVc:userVC Image:@"tab_btn_wode" selectedImage:@"tab_btn_wode_pre" title:@"我的"];
 }
 
 #pragma mark - 初始化设置tabBar上面单个按钮的方法
