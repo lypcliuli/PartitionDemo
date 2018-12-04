@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "MePartition模块"
   s.description  = <<-DESC
-  MePartition模块
+  MePartition模块MePartition模块MePartition模块MePartition模块MePartition模块MePartition模块MePartition模块MePartition模块
                    DESC
 
   s.homepage     = "https://github.com/lypcliuli/PartitionDemo"
