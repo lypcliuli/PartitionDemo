@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "MainPartition"
+  s.name         = "MePartition"
   s.version      = "0.0.1"
   s.summary      = "MePartition模块"
   s.description  = <<-DESC
