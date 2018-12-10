@@ -19,6 +19,7 @@
 		5F7F37B121BE4F4200DB47C6 /* CTMediator+MainPartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37B021BE4F4200DB47C6 /* CTMediator+MainPartition.m */; };
 		5F7F37B421BE509D00DB47C6 /* CTMediator+MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37B321BE509D00DB47C6 /* CTMediator+MePartition.m */; };
 		5F7F37BC21BE599B00DB47C6 /* Target_MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37BB21BE599B00DB47C6 /* Target_MePartition.m */; };
+		5F7F37C021BE672B00DB47C6 /* Target_MainPartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37BE21BE672B00DB47C6 /* Target_MainPartition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		5F7F37B321BE509D00DB47C6 /* CTMediator+MePartition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+MePartition.m"; sourceTree = "<group>"; };
 		5F7F37BA21BE599B00DB47C6 /* Target_MePartition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MePartition.h; sourceTree = "<group>"; };
 		5F7F37BB21BE599B00DB47C6 /* Target_MePartition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MePartition.m; sourceTree = "<group>"; };
+		5F7F37BE21BE672B00DB47C6 /* Target_MainPartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_MainPartition.m; sourceTree = "<group>"; };
+		5F7F37BF21BE672B00DB47C6 /* Target_MainPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_MainPartition.h; sourceTree = "<group>"; };
 		5FE2859721B7A17000439B4A /* PartitionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PartitionDemo.entitlements; sourceTree = "<group>"; };
 		690E0DAD4763DCE796FF7778 /* Pods-PartitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartitionDemo/Pods-PartitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9567B912E496265B64C0918B /* libPods-PartitionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PartitionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,7 @@
 				5FE2859721B7A17000439B4A /* PartitionDemo.entitlements */,
 				5F213C8A21AFF8A900A02868 /* LSDUtils */,
 				5F7F37A421BE45B500DB47C6 /* Main_Category */,
+				5F7F37BD21BE672B00DB47C6 /* Target_MainPartition */,
 				5F7F37AB21BE46C200DB47C6 /* Me_Category */,
 				5F7F37B921BE595600DB47C6 /* Target_MePartition */,
 				5F213C8221AFF66400A02868 /* Root */,
@@ -156,6 +160,16 @@
 			);
 			path = Target_MePartition;
 			sourceTree = "<group>";
+		};
+		5F7F37BD21BE672B00DB47C6 /* Target_MainPartition */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F37BE21BE672B00DB47C6 /* Target_MainPartition.m */,
+				5F7F37BF21BE672B00DB47C6 /* Target_MainPartition.h */,
+			);
+			name = Target_MainPartition;
+			path = MainPartition/Target_MainPartition;
+			sourceTree = SOURCE_ROOT;
 		};
 		C173E4D462BD0AD75D300CE0 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -295,6 +309,7 @@
 				5F213C8D21AFF8A900A02868 /* LSDUtils.m in Sources */,
 				5F213C5021AFF42C00A02868 /* AppDelegate.m in Sources */,
 				5F7F37B121BE4F4200DB47C6 /* CTMediator+MainPartition.m in Sources */,
+				5F7F37C021BE672B00DB47C6 /* Target_MainPartition.m in Sources */,
 				5F7F37B421BE509D00DB47C6 /* CTMediator+MePartition.m in Sources */,
 				5F7F37BC21BE599B00DB47C6 /* Target_MePartition.m in Sources */,
 				5F213C8521AFF6CD00A02868 /* PartitionTabBarController.m in Sources */,
