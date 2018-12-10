@@ -7,6 +7,8 @@ target 'PartitionDemo'do
     pod 'IQKeyboardManager'
     pod 'Masonry'
     pod 'YYModel', '~> 1.0.4'
-   
+    pod 'MainPartition'
+    pod 'MePartition'
+    pod 'CTMediator'
     
 end

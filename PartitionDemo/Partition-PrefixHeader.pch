@@ -19,6 +19,7 @@
 #import <SDWebImage/UIButton+WebCache.h>
 #import "Masonry.h"
 #import "YYModel.h"
+#import <CTMediator/CTMediator.h>
 
 // 仅在debug模式输出日志
 #ifndef __OPTIMIZE__
@@ -84,16 +85,16 @@
 #define ISEMPTY(_v) (_v == nil || _v.length == 0 || [_v isKindOfClass:[NSNull class]])
 
 // 三方平台配置信息
-#define kUMAppKey @"5b06a019f43e4871600000a2"
-#define kWechatAppId @"wx81fef5acff6e9c72"
-#define kWechatAppSecret @"39ed572801764c0ce59c8c96fd7bf553"
-#define kQQAppId @"1105821097"
-#define kSinaAppId @"1105821097"
+#define kUMAppKey @"666"
+#define kWechatAppId @"666"
+#define kWechatAppSecret @"666"
+#define kQQAppId @"666"
+#define kSinaAppId @"6666"
 
-#define kIMAppKey @"f222b4fe373ac1c44adcb38180e0a5bd"
-#define kIMAppSecret @"a28695fb8b29"
+#define kIMAppKey @"66666"
+#define kIMAppSecret @"66666"
 
-#define NTES_ERROR_MSG_KEY @"description"
+#define NTES_ERROR_MSG_KEY @"666666"
 
 #endif
 

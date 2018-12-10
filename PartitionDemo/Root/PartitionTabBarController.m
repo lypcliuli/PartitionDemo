@@ -8,10 +8,11 @@
 
 #import "PartitionTabBarController.h"
 #import "PartitionNaviGationController.h"
-
-#import "MainPartitionViewController.h"
-#import "MePartitionViewController.h"
 #import "LSDUtils.h"
+
+#import "TempViewController.h"
+#import "CTMediator+MainPartition.h"
+#import "CTMediator+MePartition.h"
 
 @interface PartitionTabBarController ()
 
@@ -43,10 +44,17 @@
 }
 
 - (void)setUpChildVc {
-    MainPartitionViewController *HomeVC = [[MainPartitionViewController alloc] init];
-    [self setUpOneChildVcWithVc:HomeVC Image:@"tab_btn_home" selectedImage:@"tab_btn_home_pre" title:@"首页"];
-    MePartitionViewController *userVC = [[MePartitionViewController alloc] init];
+    // 原始的方式 直接引入头文件使用
+//    MainPartitionViewController *homeVC = [[MainPartitionViewController alloc] init];
+    UIViewController *homeVc = [[CTMediator sharedInstance] MainPartition_mainPartitionViewController];
+    [self setUpOneChildVcWithVc:homeVc Image:@"tab_btn_home" selectedImage:@"tab_btn_home_pre" title:@"首页"];
+    
+//    MePartitionViewController *userVC = [[MePartitionViewController alloc] init];
+    UIViewController *userVC = [[CTMediator sharedInstance] MePartition_viewControllerWithContentText:@"hello, world!"];
     [self setUpOneChildVcWithVc:userVC Image:@"tab_btn_wode" selectedImage:@"tab_btn_wode_pre" title:@"我的"];
+    
+    TempViewController *TempVC = [[TempViewController alloc] init];
+    [self setUpOneChildVcWithVc:TempVC Image:@"tab_btn_wode" selectedImage:@"tab_btn_wode_pre" title:@"TempVC"];
 }
 
 #pragma mark - 初始化设置tabBar上面单个按钮的方法

@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "MainPartition"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "MainPartition模块"
   s.description  = <<-DESC
-  模块MainPartition模块MainPartition模块MainPartition模块MainPartition模块MainPartition模块MainPartition模块
+  本模块的源码和对应的让外界调用的一个继承机NSObject类，来实现一个创建对象的方法 CTMediator利用runtime自动获取创建方法
                    DESC
 
   s.homepage     = "https://github.com/lypcliuli/PartitionDemo"
@@ -17,5 +17,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files  = "MainPartition/**/*.{h,m}"
+
+  s.subspec 'Target_MainPartition' do |target|
+      target.source_files = 'MainPartition/Target_MainPartition/*'
+      target.public_header_files = 'MainPartition/Target_MainPartition/*.h'
+  end
+
+  s.dependency 'CTMediator'
 
 end

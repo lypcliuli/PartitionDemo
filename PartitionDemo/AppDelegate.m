@@ -27,6 +27,20 @@
     return YES;
 }
 
+-(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
+    NSLog(@"userActivity : %@",userActivity.webpageURL.description);
+    return YES;
+}
+
+/**
+ *ios 9之后被其他app调用走这个
+ */
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
+    NSLog(@"scheme:%@",[url scheme]); //scheme名字
+    NSLog(@"query:%@",[url query]);//传递的参数
+    NSLog(@"%@",options[UIApplicationOpenURLOptionsSourceApplicationKey]);//调用方app的bundle id
+    return YES; // 如果由于某种原因应用程序无法打开，则返回NO
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
