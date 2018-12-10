@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   s.subspec 'Target_MainPartition' do |t|
       t.source_files = 'MainPartition/Target_MainPartition/*'
       t.public_header_files = 'MainPartition/Target_MainPartition/*.h'
+      t.dependency 'MainPartition/Controller'
   end
 
   s.frameworks = 'UIKit'
