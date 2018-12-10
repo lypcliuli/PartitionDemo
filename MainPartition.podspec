@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files  = "MainPartition/**/*.{h,m}"
+  
+  # s.subspec 'Target_MainPartition' do |t|
+  #     t.source_files = 'MainPartition/Target_MainPartition/*'
+  #     t.public_header_files = 'MainPartition/**/*.h'
+  # end
 
-  s.subspec 'Target_MainPartition' do |target|
-      target.source_files = 'MainPartition/Target_MainPartition/*'
-      target.public_header_files = 'MainPartition/Target_MainPartition/*.h'
-  end
-
-  s.dependency 'CTMediator'
+  s.frameworks = 'UIKit'
 
 end

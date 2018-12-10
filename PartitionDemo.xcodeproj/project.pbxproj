@@ -164,8 +164,8 @@
 		5F7F37BD21BE672B00DB47C6 /* Target_MainPartition */ = {
 			isa = PBXGroup;
 			children = (
-				5F7F37BE21BE672B00DB47C6 /* Target_MainPartition.m */,
 				5F7F37BF21BE672B00DB47C6 /* Target_MainPartition.h */,
+				5F7F37BE21BE672B00DB47C6 /* Target_MainPartition.m */,
 			);
 			name = Target_MainPartition;
 			path = MainPartition/Target_MainPartition;
