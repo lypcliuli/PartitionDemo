@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D1E819233D0226670F4E195 /* libPods-PartitionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9567B912E496265B64C0918B /* libPods-PartitionDemo.a */; };
-		5F08181221BF572E007BF9B5 /* CTMediator+MainPartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F08181121BF572E007BF9B5 /* CTMediator+MainPartition.m */; };
+		5F08181921BF6466007BF9B5 /* CTMediator+MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */; };
 		5F213C5021AFF42C00A02868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F213C4F21AFF42C00A02868 /* AppDelegate.m */; };
 		5F213C5821AFF42E00A02868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F213C5721AFF42E00A02868 /* Assets.xcassets */; };
 		5F213C5B21AFF42E00A02868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F213C5921AFF42E00A02868 /* LaunchScreen.storyboard */; };
@@ -17,13 +17,11 @@
 		5F213C8D21AFF8A900A02868 /* LSDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F213C8B21AFF8A900A02868 /* LSDUtils.m */; };
 		5F213C9021AFFDF600A02868 /* PartitionNaviGationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F213C8F21AFFDF600A02868 /* PartitionNaviGationController.m */; };
 		5F7F37A321BE176A00DB47C6 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37A221BE176A00DB47C6 /* TempViewController.m */; };
-		5F7F37B421BE509D00DB47C6 /* CTMediator+MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37B321BE509D00DB47C6 /* CTMediator+MePartition.m */; };
-		5F7F37BC21BE599B00DB47C6 /* Target_MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F37BB21BE599B00DB47C6 /* Target_MePartition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F08181021BF572E007BF9B5 /* CTMediator+MainPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+MainPartition.h"; sourceTree = "<group>"; };
-		5F08181121BF572E007BF9B5 /* CTMediator+MainPartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+MainPartition.m"; sourceTree = "<group>"; };
+		5F08181421BF6466007BF9B5 /* CTMediator+MePartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+MePartition.h"; sourceTree = "<group>"; };
+		5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+MePartition.m"; sourceTree = "<group>"; };
 		5F213C4B21AFF42C00A02868 /* PartitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F213C4E21AFF42C00A02868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F213C4F21AFF42C00A02868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,10 +38,6 @@
 		5F38470421B0FDCF0061EA81 /* Partition-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Partition-PrefixHeader.pch"; sourceTree = "<group>"; };
 		5F7F37A121BE176A00DB47C6 /* TempViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		5F7F37A221BE176A00DB47C6 /* TempViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
-		5F7F37B221BE509D00DB47C6 /* CTMediator+MePartition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+MePartition.h"; sourceTree = "<group>"; };
-		5F7F37B321BE509D00DB47C6 /* CTMediator+MePartition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+MePartition.m"; sourceTree = "<group>"; };
-		5F7F37BA21BE599B00DB47C6 /* Target_MePartition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MePartition.h; sourceTree = "<group>"; };
-		5F7F37BB21BE599B00DB47C6 /* Target_MePartition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MePartition.m; sourceTree = "<group>"; };
 		5FE2859721B7A17000439B4A /* PartitionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PartitionDemo.entitlements; sourceTree = "<group>"; };
 		690E0DAD4763DCE796FF7778 /* Pods-PartitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartitionDemo/Pods-PartitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9567B912E496265B64C0918B /* libPods-PartitionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PartitionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,13 +56,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F08180F21BF572E007BF9B5 /* Main_Category */ = {
+		5F08181321BF6466007BF9B5 /* Me_Category */ = {
 			isa = PBXGroup;
 			children = (
-				5F08181021BF572E007BF9B5 /* CTMediator+MainPartition.h */,
-				5F08181121BF572E007BF9B5 /* CTMediator+MainPartition.m */,
+				5F08181421BF6466007BF9B5 /* CTMediator+MePartition.h */,
+				5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */,
 			);
-			path = Main_Category;
+			path = Me_Category;
 			sourceTree = SOURCE_ROOT;
 		};
 		5F213C4221AFF42C00A02868 = {
@@ -93,10 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				5FE2859721B7A17000439B4A /* PartitionDemo.entitlements */,
+				5F08181321BF6466007BF9B5 /* Me_Category */,
 				5F213C8A21AFF8A900A02868 /* LSDUtils */,
-				5F08180F21BF572E007BF9B5 /* Main_Category */,
-				5F7F37AB21BE46C200DB47C6 /* Me_Category */,
-				5F7F37B921BE595600DB47C6 /* Target_MePartition */,
 				5F213C8221AFF66400A02868 /* Root */,
 				5F7F37A021BE174000DB47C6 /* Temp */,
 				5F213C4E21AFF42C00A02868 /* AppDelegate.h */,
@@ -139,24 +131,6 @@
 			path = Temp;
 			sourceTree = "<group>";
 		};
-		5F7F37AB21BE46C200DB47C6 /* Me_Category */ = {
-			isa = PBXGroup;
-			children = (
-				5F7F37B221BE509D00DB47C6 /* CTMediator+MePartition.h */,
-				5F7F37B321BE509D00DB47C6 /* CTMediator+MePartition.m */,
-			);
-			path = Me_Category;
-			sourceTree = "<group>";
-		};
-		5F7F37B921BE595600DB47C6 /* Target_MePartition */ = {
-			isa = PBXGroup;
-			children = (
-				5F7F37BA21BE599B00DB47C6 /* Target_MePartition.h */,
-				5F7F37BB21BE599B00DB47C6 /* Target_MePartition.m */,
-			);
-			path = Target_MePartition;
-			sourceTree = "<group>";
-		};
 		C173E4D462BD0AD75D300CE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +159,6 @@
 				5F213C4721AFF42C00A02868 /* Sources */,
 				5F213C4821AFF42C00A02868 /* Frameworks */,
 				5F213C4921AFF42C00A02868 /* Resources */,
-				406F8A923D59F91E15302162 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,24 +219,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		406F8A923D59F91E15302162 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PartitionDemo/Pods-PartitionDemo-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PartitionDemo/Pods-PartitionDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F5DDB1A5AB48B899AE63CBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,10 +248,8 @@
 				5F213C9021AFFDF600A02868 /* PartitionNaviGationController.m in Sources */,
 				5F7F37A321BE176A00DB47C6 /* TempViewController.m in Sources */,
 				5F213C8D21AFF8A900A02868 /* LSDUtils.m in Sources */,
+				5F08181921BF6466007BF9B5 /* CTMediator+MePartition.m in Sources */,
 				5F213C5021AFF42C00A02868 /* AppDelegate.m in Sources */,
-				5F7F37B421BE509D00DB47C6 /* CTMediator+MePartition.m in Sources */,
-				5F08181221BF572E007BF9B5 /* CTMediator+MainPartition.m in Sources */,
-				5F7F37BC21BE599B00DB47C6 /* Target_MePartition.m in Sources */,
 				5F213C8521AFF6CD00A02868 /* PartitionTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

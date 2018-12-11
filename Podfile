@@ -4,11 +4,15 @@ target 'PartitionDemo'do
     pod 'AFNetworking'
     pod 'SDWebImage', '~> 4.2.2'
     pod 'MBProgressHUD'
-    pod 'IQKeyboardManager'
-    pod 'Masonry'
-    pod 'YYModel', '~> 1.0.4'
+    #pod 'IQKeyboardManager'
+    #pod 'Masonry'
+    #pod 'YYModel', '~> 1.0.4'
+    
     pod 'MainPartition'
+    pod 'Main_Category'
+
     pod 'MePartition'
+    
     pod 'CTMediator'
     
 end

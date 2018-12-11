@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
-  s.name         = "Main_Category"
-  s.version      = "1.0.2"
-  s.summary      = "Main_Category"
+  s.name         = "Me_Category"
+  s.version      = "1.0.3"
+  s.summary      = "Me_Category"
   s.description  = <<-DESC
-  Main_CategoryMain_CategoryMain_CategoryMain_CategoryMain_CategoryMain_CategoryMain_Category
+  Me_CategoryMe_CategoryMe_CategoryMe_CategoryMe_CategoryMe_CategoryMe_CategoryMe_CategoryMe_Category
                    DESC
 
   s.homepage     = "https://github.com/lypcliuli/PartitionDemo"
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/lypcliuli/PartitionDemo.git", :tag => s.version }
   s.ios.deployment_target = '9.0'
 
-  s.source_files  = "Main_Category/**/*.{h,m}"
+  s.source_files  = "Me_Category/**/*.{h,m}"
   
   s.dependency 'CTMediator'
   
