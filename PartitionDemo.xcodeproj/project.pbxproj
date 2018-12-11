@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D1E819233D0226670F4E195 /* libPods-PartitionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9567B912E496265B64C0918B /* libPods-PartitionDemo.a */; };
-		5F08181921BF6466007BF9B5 /* CTMediator+MePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */; };
+		5F08181F21BF6AA9007BF9B5 /* Target_Temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F08181E21BF6AA9007BF9B5 /* Target_Temp.m */; };
+		5F08182221BF6AFE007BF9B5 /* CTMediator+Temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F08182121BF6AFE007BF9B5 /* CTMediator+Temp.m */; };
 		5F213C5021AFF42C00A02868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F213C4F21AFF42C00A02868 /* AppDelegate.m */; };
 		5F213C5821AFF42E00A02868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F213C5721AFF42E00A02868 /* Assets.xcassets */; };
 		5F213C5B21AFF42E00A02868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F213C5921AFF42E00A02868 /* LaunchScreen.storyboard */; };
@@ -20,8 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F08181421BF6466007BF9B5 /* CTMediator+MePartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+MePartition.h"; sourceTree = "<group>"; };
-		5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+MePartition.m"; sourceTree = "<group>"; };
+		5F08181D21BF6AA9007BF9B5 /* Target_Temp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Temp.h; sourceTree = "<group>"; };
+		5F08181E21BF6AA9007BF9B5 /* Target_Temp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Temp.m; sourceTree = "<group>"; };
+		5F08182021BF6AFE007BF9B5 /* CTMediator+Temp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Temp.h"; sourceTree = "<group>"; };
+		5F08182121BF6AFE007BF9B5 /* CTMediator+Temp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Temp.m"; sourceTree = "<group>"; };
 		5F213C4B21AFF42C00A02868 /* PartitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F213C4E21AFF42C00A02868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F213C4F21AFF42C00A02868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,14 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F08181321BF6466007BF9B5 /* Me_Category */ = {
+		5F08181B21BF6A21007BF9B5 /* Target_Temp */ = {
 			isa = PBXGroup;
 			children = (
-				5F08181421BF6466007BF9B5 /* CTMediator+MePartition.h */,
-				5F08181521BF6466007BF9B5 /* CTMediator+MePartition.m */,
+				5F08181D21BF6AA9007BF9B5 /* Target_Temp.h */,
+				5F08181E21BF6AA9007BF9B5 /* Target_Temp.m */,
 			);
-			path = Me_Category;
-			sourceTree = SOURCE_ROOT;
+			path = Target_Temp;
+			sourceTree = "<group>";
+		};
+		5F08181C21BF6A55007BF9B5 /* Temp_Category */ = {
+			isa = PBXGroup;
+			children = (
+				5F08182021BF6AFE007BF9B5 /* CTMediator+Temp.h */,
+				5F08182121BF6AFE007BF9B5 /* CTMediator+Temp.m */,
+			);
+			path = Temp_Category;
+			sourceTree = "<group>";
 		};
 		5F213C4221AFF42C00A02868 = {
 			isa = PBXGroup;
@@ -87,10 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				5FE2859721B7A17000439B4A /* PartitionDemo.entitlements */,
-				5F08181321BF6466007BF9B5 /* Me_Category */,
 				5F213C8A21AFF8A900A02868 /* LSDUtils */,
 				5F213C8221AFF66400A02868 /* Root */,
-				5F7F37A021BE174000DB47C6 /* Temp */,
+				5F7F37A021BE174000DB47C6 /* TempPart */,
+				5F08181C21BF6A55007BF9B5 /* Temp_Category */,
 				5F213C4E21AFF42C00A02868 /* AppDelegate.h */,
 				5F213C4F21AFF42C00A02868 /* AppDelegate.m */,
 				5F213C5721AFF42E00A02868 /* Assets.xcassets */,
@@ -122,13 +134,14 @@
 			path = LSDUtils;
 			sourceTree = SOURCE_ROOT;
 		};
-		5F7F37A021BE174000DB47C6 /* Temp */ = {
+		5F7F37A021BE174000DB47C6 /* TempPart */ = {
 			isa = PBXGroup;
 			children = (
 				5F7F37A121BE176A00DB47C6 /* TempViewController.h */,
 				5F7F37A221BE176A00DB47C6 /* TempViewController.m */,
+				5F08181B21BF6A21007BF9B5 /* Target_Temp */,
 			);
-			path = Temp;
+			path = TempPart;
 			sourceTree = "<group>";
 		};
 		C173E4D462BD0AD75D300CE0 /* Frameworks */ = {
@@ -245,10 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F213C5E21AFF42E00A02868 /* main.m in Sources */,
+				5F08182221BF6AFE007BF9B5 /* CTMediator+Temp.m in Sources */,
 				5F213C9021AFFDF600A02868 /* PartitionNaviGationController.m in Sources */,
 				5F7F37A321BE176A00DB47C6 /* TempViewController.m in Sources */,
+				5F08181F21BF6AA9007BF9B5 /* Target_Temp.m in Sources */,
 				5F213C8D21AFF8A900A02868 /* LSDUtils.m in Sources */,
-				5F08181921BF6466007BF9B5 /* CTMediator+MePartition.m in Sources */,
 				5F213C5021AFF42C00A02868 /* AppDelegate.m in Sources */,
 				5F213C8521AFF6CD00A02868 /* PartitionTabBarController.m in Sources */,
 			);

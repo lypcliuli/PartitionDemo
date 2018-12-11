@@ -8,10 +8,13 @@ target 'PartitionDemo'do
     #pod 'Masonry'
     #pod 'YYModel', '~> 1.0.4'
     
+    # 主页模块 & Category
     pod 'MainPartition'
     pod 'Main_Category'
-
+    
+    # me模块 & Category
     pod 'MePartition'
+    pod 'Me_Category'
     
     pod 'CTMediator'
     

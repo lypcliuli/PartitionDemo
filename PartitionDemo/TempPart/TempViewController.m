@@ -20,14 +20,14 @@
     [button setFrame:CGRectMake(100, 200, 100, 100)];
     [button setBackgroundColor:[UIColor greenColor]];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button setTitle:@"跳转到另一个app" forState:UIControlStateNormal];
+    [button setTitle:@"click" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     // Do any additional setup after loading the view.
 }
 
 - (void)clickBtn:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"MainDemo://?userId=123&userName=lypc"] options:@{@"userId":@"1232342"} completionHandler:^(BOOL success) {}];
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"MainDemo://?userId=123&userName=lypc"] options:@{@"userId":@"1232342"} completionHandler:^(BOOL success) {}];
 
 }
 
