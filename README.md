@@ -11,5 +11,3 @@
 2、创建一个Target_action,继承自NSObject，因为CTMediator内部主要通过runtime机制实现（可以看源码，几百行）；
 3、创建一个分类Category，通过Category解耦（个人理解词汇）；
 
-
-![图片](http://47.92.94.94/5f5321bd-40a4-4c0f-9a29-2cd8c91c284b.jpg)
